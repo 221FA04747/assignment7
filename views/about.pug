@@ -1,0 +1,37 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title About Us
+    link(rel="stylesheet", href="/assets/css/about.css")
+  
+  body
+    header
+      h2 FINMAN
+      nav
+        .nav-logo
+          img.nav-logo-img(src="/assets/img/Finman-Logo-1.png", alt="Logo")
+        .nav-links
+          a(href="/login") Home
+          a(href="/dashboard") Dashboard
+          a(href="/about") About
+          a(href="/personal") Personal information
+        .nav-logout
+          button(onclick="logout()") Logout
+    
+    main
+      h2 About Us
+      p We are dedicated to providing the best tools for managing your finances. Our platform helps you track expenses, budgets, and savings.
+
+    footer
+      p Contact us at:
+        a(href="mailto:info@website.com") info@website.com
+      p Follow us on:
+      a(href="https://www.facebook.com", target="_blank")
+        img(src="/assets/img/facebook.png", alt="Facebook")
+      a(href="https://www.twitter.com", target="_blank")
+        img(src="/assets/img/twitter.png", alt="Twitter")
+      a(href="https://www.instagram.com", target="_blank")
+        img(src="/assets/img/instagram.png", alt="Instagram")
+      p &copy; 2024 My Website. All Rights Reserved.

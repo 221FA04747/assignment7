@@ -1,0 +1,59 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Dashboard
+    link(rel="stylesheet", href="/assets/css/dashboard.css")
+  
+  body
+    header
+      h2 FINMAN
+      nav
+        .nav-logo
+          img.nav-logo-img(src="/assets/img/Finman-Logo-1.png", alt="Logo")
+        .nav-links
+          a(href="/login") Home
+          a(href="/dashboard") Dashboard
+          a(href="/about") About
+          a(href="/personal") Personal information
+        .nav-logout
+          button(onclick="logout()") Logout
+    
+    main
+      h2 User Dashboard
+      table.dashboard-table
+        thead
+          tr
+            th Name
+            th Email
+            th Account Balance
+        tbody
+          tr
+            td Prabhas
+            td prabhasbablu14@gmail.com
+            td $1000
+          tr
+            td Alice Johnson
+            td alice.johnson@example.com
+            td $1500
+          tr
+            td Michael Smith
+            td michael.smith@example.com
+            td $2000
+          tr
+            td Susan Lee
+            td susan.lee@example.com
+            td $2500
+
+    footer
+      p Contact us at:
+        a(href="mailto:info@website.com") info@website.com
+      p Follow us on:
+      a(href="https://www.facebook.com", target="_blank")
+        img(src="/assets/img/facebook.png", alt="Facebook")
+      a(href="https://www.twitter.com", target="_blank")
+        img(src="/assets/img/twitter.png", alt="Twitter")
+      a(href="https://www.instagram.com", target="_blank")
+        img(src="/assets/img/instagram.png", alt="Instagram")
+      p &copy; 2024 My Website. All Rights Reserved.

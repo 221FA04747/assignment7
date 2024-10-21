@@ -1,0 +1,23 @@
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; 
+}
+
+.nav-logout {
+    margin-left: auto; 
+}
+
+.nav-logout button {
+    background-color: #f44336; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}

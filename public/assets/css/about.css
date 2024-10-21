@@ -1,0 +1,167 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: olive; /* Background color */
+    color: #333;
+    position: relative; /* For footer positioning */
+    min-height: 100vh; /* Ensures footer stays at the bottom */
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Space out links */
+    align-items: center;
+    margin: 10px;
+}
+
+nav .nav-links {
+    display: flex; /* Keep the main links in a row */
+    justify-content: center; /* Center the nav links */
+    flex-grow: 1; /* Allow this section to grow and take space */
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo {
+    width: 200px; /* Increased width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between logo and title */
+}
+
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Space between navigation items */
+}
+
+nav li {
+    background: rgba(255, 255, 255, 0.8); /* Light background for nav items */
+    border-radius: 8px; /* Rounded corners */
+    padding: 10px 15px; /* Padding inside the box */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transition effects */
+}
+
+nav li:hover {
+    transform: translateY(-3px); /* Lift effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+}
+
+nav a {
+    color: #333; /* Text color */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    color: #007BFF; /* Change text color on hover */
+}
+
+.hero {
+    background: url('your-image-url.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    position: relative; /* Position for scrolling effect */
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffdd57;
+    color: #333;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f7c600;
+}
+
+.money-animation {
+    position: absolute; /* Changed to absolute for scrolling */
+    bottom: 10%; /* Position above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    animation: scroll 5s linear infinite; /* Added scrolling animation */
+}
+
+.money {
+    width: 100px; /* Adjust as necessary */
+}
+
+@keyframes scroll {
+    0% { transform: translate(-50%, 0); }
+    100% { transform: translate(-50%, -100%); } /* Scrolls up */
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}
+
+
+nav {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    justify-content: space-between; /* Space between logo, links, and logout button */
+}
+
+.nav-logo-img {
+    height: 120px; /* Adjust height as needed */
+    margin-right: 15px; /* Space between logo and nav links */
+}
+
+.nav-links {
+    display: flex;
+    gap: 15px; /* Space between nav links */
+}

@@ -1,0 +1,131 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title User Information Form
+    link(rel="stylesheet", href="/assets/css/personal.css")
+  body
+    header
+      h1 User Information Form
+        nav
+        .nav-logo
+          img.nav-logo-img(src="/assets/img/Finman-Logo-1.png", alt="Logo")
+        .nav-links
+          a(href="/login") Home
+          a(href="/dashboard") Dashboard
+          a(href="/about") About
+          a(href="/personal") Personal information
+        .nav-logout
+          button(onclick="logout()") Logout
+        
+
+    main
+      form#userInfoForm
+        fieldset
+          legend Name
+          label(for="firstName") First Name:
+          input#firstName(type="text", name="firstName", required=true)
+          label(for="lastName") Last Name:
+          input#lastName(type="text", name="lastName", required=true)
+
+        fieldset
+          legend Contact
+          label(for="phone") Phone:
+          input#phone(type="tel", name="phone", required=true)
+          label(for="address") Address:
+          input#address(type="text", name="address", required=true)
+
+        fieldset
+          legend Email
+          label(for="email") Email:
+          input#email(type="email", name="email", required=true)
+
+        fieldset
+          legend Age
+          label(for="age") Age:
+          input#age(type="number", name="age", min="0", required=true)
+
+        fieldset
+          legend Income
+          label(for="income") Income:
+          input#income(type="number", name="income", min="0", required=true)
+
+        fieldset
+          legend Family Information
+          label(for="familyMembers") Number of Family Members:
+          input#familyMembers(type="number", name="familyMembers", min="1", required=true)
+          label(for="olderCitizens") Are there older citizens (65+ years) in the family?
+          select#olderCitizens(name="olderCitizens", required=true)
+            option(value="" disabled selected) Select
+            option(value="yes") Yes
+            option(value="no") No
+          #olderCitizensDetails(style="display: none;")
+            label(for="olderCitizensCount") Number of older citizens:
+            input#olderCitizensCount(type="number", name="olderCitizensCount", min="0")
+            #healthConditionContainer(style="display: none;")
+              label(for="healthCondition") Health condition of older citizen(s):
+              textarea#healthCondition(name="healthCondition", rows="4", cols="50", placeholder="Describe health condition...")
+
+        fieldset
+          legend Children Information
+          label(for="hasChildren") Do you have children?
+          select#hasChildren(name="hasChildren", required=true)
+            option(value="" disabled selected) Select
+            option(value="yes") Yes
+            option(value="no") No
+          #childrenDetails(style="display: none;")
+            label(for="childrenCount") Number of Children:
+            input#childrenCount(type="number", name="childrenCount", min="0")
+            #childrenEducationDetails
+
+        fieldset
+          legend Loans or Debts
+          label(for="hasLoans") Do you have any loans or debts?
+          select#hasLoans(name="hasLoans", required=true)
+            option(value="" disabled selected) Select
+            option(value="yes") Yes
+            option(value="no") No
+          #loanDetails(style="display: none;")
+            label(for="loanType") Type of Loan or Debt:
+            input#loanType(type="text", name="loanType", placeholder="E.g., Personal Loan, Mortgage, Credit Card", required=true)
+            label(for="loanAmount") Loan or Debt Amount:
+            input#loanAmount(type="number", name="loanAmount", min="0", required=true)
+            label(for="loanDuration") Loan Duration (in years):
+            input#loanDuration(type="number", name="loanDuration", min="0", required=true)
+
+        button(type="button", onclick="calculateBudget()") Submit
+        button(type="reset") Reset
+
+      section#budgetOutput(style="display: none;")
+        h2 Estimated Budget Breakdown (AI-Based)
+        p
+          strong Essentials (50%):
+          |  $ 
+          span#essentials
+        p
+          strong Savings (20%):
+          |  $ 
+          span#savings
+        p
+          strong Discretionary (30%):
+          |  $ 
+          span#discretionary
+        p
+          strong Loan Repayment:
+          |  $ 
+          span#loanRepayment
+
+    footer
+      p Contact us at:
+        a(href="mailto:info@website.com") info@website.com
+      p Follow us on:
+      a(href="https://www.facebook.com", target="_blank")
+        img(src="/assets/img/facebook.png", alt="Facebook")
+      a(href="https://www.twitter.com", target="_blank")
+        img(src="/assets/img/twitter.png", alt="Twitter")
+      a(href="https://www.instagram.com", target="_blank")
+        img(src="/assets/img/instagram.png", alt="Instagram")
+      p &copy; 2024 My Website. All Rights Reserved.
+
+    script(src="/assets/javascript/personal.js")

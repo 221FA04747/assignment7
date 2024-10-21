@@ -1,0 +1,139 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #640D5F;
+    color: #fff;
+    position: relative;
+    padding: 0; /* Remove padding to ensure full alignment to edges */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; /* Align content to the bottom */
+    height: 200px; /* Adjust height as needed */
+}
+
+/* Logout Button - Top Right Corner */
+.nav-logout {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.nav-logout button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nav-logout button:hover {
+    background-color: #d32f2f;
+}
+
+/* Nav styling */
+nav {
+    width: 100%; /* Full width of the container */
+}
+
+nav h1, nav h2 {
+    margin: 5px 0;
+    text-align: center;
+}
+
+/* Make nav items spread across and positioned at the bottom */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between; /* Spread items across full width */
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: #D91656;
+    position: relative; /* Positioned within the header */
+    height: 60px; /* Set the height for the nav bar */
+    align-items: center; /* Vertically center items within the bar */
+}
+
+nav ul li {
+    flex: 1; /* Each <li> takes equal space */
+    text-align: center; /* Center the text inside each <li> */
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #640D5F;
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1em;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.buttons button:hover {
+    background-color: #45a049;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer img {
+    width: 30px;
+    height: 30px;
+    vertical-align: middle;
+}

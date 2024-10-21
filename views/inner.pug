@@ -1,0 +1,49 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title FIN MAN
+    link(rel="stylesheet", href="/assets/css/inner.css")
+    script(src="/assets/javascript/inner.js")
+  
+  body
+    header
+      nav
+        h1 FINMAN
+         p Finance management at your fingertips.
+
+        .nav-logo
+          img.nav-logo-img(src="/assets/img/Finman-Logo-1.png", alt="Logo")
+
+        ul.nav-links
+          li
+            a(href="/login") Home
+          li
+            a(href="/dashboard") Dashboard
+          li
+            a(href="/about") About
+          li
+            a(href="/personal") Profile
+
+        .nav-logout
+          button(onclick="logout()") Logout
+
+    section
+      h1 Welcome
+      p Finance management is the process of planning, organizing, directing, and controlling the financial activities of an organization or individual. It involves managing financial resources to achieve specific goals, ensuring effective allocation, and optimizing financial performance.
+      .buttons
+        button(onclick="window.location.href='/login.pug'") Login
+        button(onclick="window.location.href='/registration.pug'") Register
+
+    footer
+      p Contact us at:
+        a(href="mailto:info@website.com") info@website.com
+      p Follow us on:
+      a(href="https://www.facebook.com", target="_blank")
+        img(src="/assets/img/facebook.png", alt="Facebook")
+      a(href="https://www.twitter.com", target="_blank")
+        img(src="/assets/img/twitter.png", alt="Twitter")
+      a(href="https://www.instagram.com", target="_blank")
+        img(src="/assets/img/instagram.png", alt="Instagram")
+      p &copy; 2024 My Website. All Rights Reserved.

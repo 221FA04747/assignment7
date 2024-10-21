@@ -1,0 +1,38 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Login Page
+    link(rel="stylesheet", href="/assets/css/login.css")
+  
+  body
+    header
+      h1 FINMAN
+
+    section
+      h1 Login
+      form#loginForm
+        label(for="email") Email:
+        input#email(type="email", required=true)
+        
+        label(for="password") Password:
+        input#password(type="password", required=true)
+        
+        button(type="submit") Login
+      p Don't have an account?
+        a(href="/registration.pug") Register here
+
+    footer
+      p Contact us at:
+        a(href="mailto:info@website.com") info@website.com
+      p Follow us on:
+      a(href="https://www.facebook.com", target="_blank")
+        img(src="/assets/img/facebook.png", alt="Facebook")
+      a(href="https://www.twitter.com", target="_blank")
+        img(src="/assets/img/twitter.png", alt="Twitter")
+      a(href="https://www.instagram.com", target="_blank")
+        img(src="/assets/img/instagram.png", alt="Instagram")
+      p &copy; 2024 My Website. All Rights Reserved.
+
+    script(src="/assets/javascript/login.js")
